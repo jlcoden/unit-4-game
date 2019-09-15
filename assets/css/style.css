@@ -1,7 +1,8 @@
 html, body {
     height: 100%;
-    background-color: black; 
+    background-color: black;
 }
+
 
 .container {
     width: auto;
@@ -17,6 +18,8 @@ html, body {
 
  .leftSideColumn{
     border-right: 5px solid #DD3497;
+    background-color: black; 
+    color: white; 
  }
 
 button {
@@ -40,7 +43,7 @@ button.btn {
       width: 20%; 
     }
 
-    .winLoss {
+    .winLossP {
         background-color: #867180;
         height: 10%; 
         color: black; 
@@ -51,19 +54,15 @@ button.btn {
         width: 20%; 
       }
 
-p{
-    color: white;
-}
-
-p.winLoss {
+  p.winLoss {
     color: black;
     margin-bottom: 0px; 
     margin-top: 0px; 
-    font-size: 1em;
-
+    width: 200 px; 
+    height: auto; 
 }
 
-p.randomNumber {
+.random-number {
     background-color: #867180;
     width: 100px; 
     height: 10%; 
@@ -79,6 +78,7 @@ p.randomNumber {
       color: #BC82CF;
       padding: 10px; 
       font-weight: bold;
+      font-size: 1.5em; 
   }
   
   h2.scoreTitle {
