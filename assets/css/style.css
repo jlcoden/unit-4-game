@@ -1,31 +1,43 @@
-.container {
-    width: 60%;
-    float: left; 
+html, body {
+    height: 100%;
+    background-color: black; 
 }
 
-.row img {
-    position: relative;
+.container {
+    width: auto;
+    height: 100%;  
+}
+
+.pagePhoto{
+    background: url(../images/darkCrystal2.jpeg) no-repeat;
+    float: right;  
+    background-size:cover;
+
+ }
+
+ .leftSideColumn{
+    border-right: 5px solid #DD3497;
+ }
+
+button {
+    padding: 0;
     width: 110px; 
     height: 110px; 
-    border: solid #cccccc 1px; 
-  
-  }
+    background-color: black; 
+}
 
-   .leftSideWrapper {
-       width: auto;
-       height: 100%; 
-       background-color: black; 
-   /*    border-right: 5px solid #DD3497; */
-   }
+button.btn {
+    padding: 0px; 
+    margin: 0px; 
+    border: 2px solid white; 
+}
 
 #score {
       background-color: #867180;
-      width: auto;
-      height: 30%; 
       color: black; 
-      padding-bottom: 30px; 
-      padding-top: 10px;
       font-size: 200%;
+      height: 100%; 
+      width: 20%; 
     }
 
     .winLoss {
@@ -53,14 +65,14 @@ p.winLoss {
 
 p.randomNumber {
     background-color: #867180;
-    width: 200px; 
+    width: 100px; 
     height: 10%; 
     color: black; 
     font-size: 200%;
     padding-bottom: 30px; 
     padding-top: 10px;
     padding-left: 5px;
-    font-size: 200%;
+    font-size: 200%; 
   }
 
   h1 {
@@ -72,14 +84,7 @@ p.randomNumber {
   h2.scoreTitle {
       color: black; 
       background-color: #867180;
-      width: auto; 
+      width: 40%; 
       font-size: 1.5em;
 
-  }
-
-  body {
-      background-color: black; 
-      background-image: url("../images/darkCrystal2.jpeg");
-      background-position: right;
-      background-repeat: no-repeat; 
   }

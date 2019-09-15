@@ -8,15 +8,15 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
- 
-<div class="container">
-  <div class ="leftSideWrapper bg-dark text-white m-5">
-        
-  <div class="row">
-      <h1>Crystals Collector, Dark Crystal Edition</h1>
-      <div class="col-md-12">
+<section>
+            <div class="container">
+                  <div class="card">
+                  <div class="row" style ="display: flex; flex-wrap: wrap">
+                  <div class="col-md-6 leftSideColumn">
+                        <div class="card-block">
+      <div> <h1>Crystals Collector, Dark Crystal Edition</h1>
            <p> The The Great Conjunction is upon us! To save Thra, you must complete the crystal challenge
-            You will be given a random number at the start of the game.  </p>
+            The great mystics will provide you a random number at the start of the game.  </p>
 
            <p> There are four magical crystals below. By clicking on a crystal you will 
             add a specific amount of points to your total score. </p>
@@ -29,54 +29,53 @@
             <p>Each time the game starts, the game will change the values of each 
             crystal </p> 
 
-            <p>What was sundered and undone shall be whole—the two made one.</p>
+            <p>Good Luck, and remember, what was sundered and undone shall be whole—the two made one!</p>
       </div>
-  </div>
- 
-  <div class="row">
-      <div class="col-md-4 randomNum">
 
-            <p class = "randomNumber">0</p>
+      <div class=  "randomNum">
 
-      </div>
-      <div class="col-md-8 stats">
-            <div class = "winLoss">
-                <p class = "winLoss">Wins:</p> 
-                <p class = "winLoss">Losses:</p>
+                  <p class = "randomNumber">0</p>
+      
             </div>
-      </div>
-  </div>
-
-  <div class="row">
-  <div class="col-sm-2 column crystal">
-        <img src="assets/images/redCrystal2.jpg"  alt="Red Crystal">
-  </div>
-  <div class="col-sm-2 column crystal">
-        <img src="assets/images/blueCrystal1.jpg"  alt="Blue Crystal">
-  </div>
-  <div class="col-sm-2 column crystal">
-        <img src="assets/images/yellowCrystal.jpg"  alt="Yellow Crystal">
-  </div>
-  <div class="col-sm-2 column crystal">
-        <img src="assets/images/greenCrystal1.jpg"  alt="Green Crystal">
-  </div>
-</div>
-  <div class="row">
-   
-        <div class="col-sm-4 score">
-                <h2 class = scoreTitle> Your Total Score is</h1>
-                <p id = "score">0</p>
+            <div class=" stats">
+                  <div class = "winLoss">
+                      <p class = "winLoss">Wins:</p> 
+                      <p class = "winLoss">Losses:</p>
+                  </div>
             </div>
 
-            </div>
             
-      <audio controls>
-            <source src="assets/images/darkCrystalTheme.mp3" type="audio/mpeg">
-   
-          </audio>
+            <button class="btn" >
+                        <img src="assets/images/redCrystal2.jpg" width="100%" /> 
+                   </button>
 
+            <button class="btn">
+                        <img src="assets/images/blueCrystal1.jpg" width="100%"  /> 
+                   </button>
+
+            <button class="btn">
+                        <img src="assets/images/greenCrystal1.jpg" width="100%" /> 
+                   </button>
+
+            <button class="btn">
+                        <img src="assets/images/yellowCrystal.jpg" width="100%" /> 
+                   </button>
+
+                   <div class=" score">
+                              <h2 class = scoreTitle> Your Total Score is</h2>
+                              <p id = "score">0</p>
+              
+                   </div>
+
+                        </div>
+                              </div>
+                                    <div class="col-md-6 pagePhoto">
+                              </div>
+                  </div>
+             </div>
       </div>
-</div>
+</section>
 </body>
 </html>
+
  
