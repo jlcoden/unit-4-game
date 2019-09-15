@@ -1,42 +1,85 @@
+.container {
+    width: 60%;
+    float: left; 
+}
 
- .row img {
+.row img {
     position: relative;
     width: 110px; 
     height: 110px; 
     border: solid #cccccc 1px; 
-    margin-right: 20px;
   
   }
 
-   .container-fluid {
-     background-image: url("../images/darkCrystal2.jpeg");
-     background-position: right;
-     height: 100%; 
-     width: 100%;
-     position: absolute; 
-     background-repeat: no-repeat; 
-     color: white; 
-     background-color: black;
-   }
-
    .leftSideWrapper {
-       width: 60%; 
+       width: auto;
        height: 100%; 
        background-color: black; 
-       border-right: 5px solid #DD3497;
+   /*    border-right: 5px solid #DD3497; */
    }
 
-p.score {
-      background-color: gray; 
-      width: 300px; 
-      height: 20%;
+#score {
+      background-color: #867180;
+      width: auto;
+      height: 30%; 
       color: black; 
-    
+      padding-bottom: 30px; 
+      padding-top: 10px;
+      font-size: 200%;
+    }
+
+    .winLoss {
+        background-color: #867180;
+        height: 10%; 
+        color: black; 
+        padding-bottom: 10px;
+        font-size: 130%;
+        padding-top: 5px; 
+        margin-bottom: 10px; 
+        width: 20%; 
+      }
+
+p{
+    color: white;
+}
+
+p.winLoss {
+    color: black;
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    font-size: 1em;
+
+}
+
+p.randomNumber {
+    background-color: #867180;
+    width: 200px; 
+    height: 10%; 
+    color: black; 
+    font-size: 200%;
+    padding-bottom: 30px; 
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 200%;
+  }
+
+  h1 {
+      color: #BC82CF;
+      padding: 10px; 
+      font-weight: bold;
   }
   
   h2.scoreTitle {
       color: black; 
-      background-color: gray; 
-      width: 300px; 
+      background-color: #867180;
+      width: auto; 
+      font-size: 1.5em;
 
+  }
+
+  body {
+      background-color: black; 
+      background-image: url("../images/darkCrystal2.jpeg");
+      background-position: right;
+      background-repeat: no-repeat; 
   }

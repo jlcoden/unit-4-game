@@ -9,30 +9,42 @@
 </head>
 <body>
  
-<div class="container-fluid">
-    <div class ="leftSideWrapper">
+<div class="container">
+  <div class ="leftSideWrapper bg-dark text-white m-5">
         
   <div class="row">
       <h1>Crystals Collector, Dark Crystal Edition</h1>
-      <div class="col-md-6">
-           <p> You will be given a random number at the start of the game. </p>
+      <div class="col-md-12">
+           <p> The The Great Conjunction is upon us! To save Thra, you must complete the crystal challenge
+            You will be given a random number at the start of the game.  </p>
 
-           <p>  There are four crystals below. By clicking on a crystal you will 
+           <p> There are four magical crystals below. By clicking on a crystal you will 
             add a specific amount of points to your total score. </p>
             
-            <p>  You win the game by matching your total score to random number.
-            You lose the game if your total score goes above the random number. </p>
+            <p>  You win the game by matching your total score to the random number.
+            You will lose the game if your total score goes above the random number. </p>
             
-            <p>   The value of each crystal is hidden from you until you click on it. </p>
+            <p> The value of each crystal is hidden from you until you click on it. </p>
             
-            <p>   Each time the game starts, the game will change the values of each 
+            <p>Each time the game starts, the game will change the values of each 
             crystal </p> 
+
+            <p>What was sundered and undone shall be whole—the two made one.</p>
       </div>
   </div>
  
   <div class="row">
-      <div class="col-md-2 randomNum"></div>
-      <div class="col-md-2 stats"></div>
+      <div class="col-md-4 randomNum">
+
+            <p class = "randomNumber">0</p>
+
+      </div>
+      <div class="col-md-8 stats">
+            <div class = "winLoss">
+                <p class = "winLoss">Wins:</p> 
+                <p class = "winLoss">Losses:</p>
+            </div>
+      </div>
   </div>
 
   <div class="row">
@@ -45,21 +57,25 @@
   <div class="col-sm-2 column crystal">
         <img src="assets/images/yellowCrystal.jpg"  alt="Yellow Crystal">
   </div>
-  <div class="col-sm-6 column crystal">
+  <div class="col-sm-2 column crystal">
         <img src="assets/images/greenCrystal1.jpg"  alt="Green Crystal">
   </div>
 </div>
-  <div class="row"></div>
+  <div class="row">
    
         <div class="col-sm-4 score">
                 <h2 class = scoreTitle> Your Total Score is</h1>
-                <p class = "score">0</p>
+                <p id = "score">0</p>
             </div>
-</div>
 
+            </div>
+            
+      <audio controls>
+            <source src="assets/images/darkCrystalTheme.mp3" type="audio/mpeg">
+   
+          </audio>
 
-</div>
- 
+      </div>
 </div>
 </body>
 </html>
