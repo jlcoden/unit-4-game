@@ -43,7 +43,7 @@ button.btn {
       width: 20%; 
     }
 
-    .winLossP {
+    #winLossP {
         background-color: #867180;
         height: 10%; 
         color: black; 
