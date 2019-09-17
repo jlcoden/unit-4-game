@@ -7,6 +7,7 @@ html, body {
 .container {
     width: auto;
     height: 100%;  
+    background-color: black; 
 }
 
 .pagePhoto{
@@ -38,7 +39,7 @@ button.btn {
 #score {
       background-color: #867180;
       color: black; 
-      font-size: 200%;
+      font-size: 1.5em;
       height: 100%; 
       width: 20%; 
     }
@@ -48,7 +49,7 @@ button.btn {
         height: 10%; 
         color: black; 
         padding-bottom: 10px;
-        font-size: 130%;
+        font-size: 1.5em; 
         padding-top: 5px; 
         margin-bottom: 10px; 
         width: 20%; 
@@ -59,7 +60,7 @@ button.btn {
         height: 10%; 
         color: black; 
         padding-bottom: 10px;
-        font-size: 130%;
+        font-size: 1.5em;
         padding-top: 5px; 
         margin-bottom: 10px; 
         width: 20%; 
@@ -71,11 +72,11 @@ button.btn {
     width: 100px; 
     height: 10%; 
     color: black; 
-    font-size: 200%;
+    font-size: 1.5em; 
     padding-bottom: 30px; 
     padding-top: 10px;
     padding-left: 5px;
-    font-size: 200%; 
+    font-size: 1.5em; 
   }
 
   h1 {
@@ -83,6 +84,8 @@ button.btn {
       padding: 10px; 
       font-weight: bold;
       font-size: 1.5em; 
+      font-weight: 400;
+      line-height: 1.5; 
   }
   
   h2.scoreTitle {
@@ -90,5 +93,17 @@ button.btn {
       background-color: #867180;
       width: 40%; 
       font-size: 1.5em;
+      margin-top: 10px; 
+      font-weight: 400;
+      line-height: 1.5;
+  }
+
+  #scoreDiv{
+    color: black; 
+      background-color: #867180;
+      width: 40%; 
+      font-weight: 400;
+      font-size: 1.5em;
+
 
   }
