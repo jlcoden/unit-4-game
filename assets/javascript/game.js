@@ -28,16 +28,17 @@ $(document).ready(function() {
            var crystalValue = $("#btn");
            // crystalNumber.each(function() {
 
-           for(var i = 0; i <4; i++) {
-              var random = Math.floor(Math.random() * 11) + 1;
-              $(this).attr({
-                "data-random": random 
-              }); 
-            }
-            $("#btn").on('click', function() { 
     
+            $("#btn").on('click', function() {
+
+                for(var i = 0; i <4; i++) {
+                    var random = Math.floor(Math.random() * 12 + 1);
+                    $(this).attr({
+                      "data-random": random 
+                    }); 
                 crystalValue = ($(this).attr("data-random"));
                 crystalValue = parseInt(crystalValue); 
+                console.log(crystalValue); 
 
 
             $("#scoreDiv").text(counter); 
@@ -46,13 +47,21 @@ $(document).ready(function() {
                 if(counter > randomNumber) {
                     alert("Sorry, you lost!"); 
                     losses++;
-                
+                    var showLosses= "Losses: " + losses;
+                     $('#lossesAmount').text(showLosses);
                 }
                 else if (counter === randomNumber) {
                     alert("You won!"); 
                     wins++;
-                    $("winLossP").html(wins); 
+                    var showWins= "Wins: " + wins;
+                    $("winsAmount").text(showWins); 
                 }
+
+                
+
+            }
+
+            
         
             });
 

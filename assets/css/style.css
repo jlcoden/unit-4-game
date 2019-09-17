@@ -43,7 +43,7 @@ button.btn {
       width: 20%; 
     }
 
-    #winLossP {
+   #winsAmount {
         background-color: #867180;
         height: 10%; 
         color: black; 
@@ -54,13 +54,17 @@ button.btn {
         width: 20%; 
       }
 
-  p.winLoss {
-    color: black;
-    margin-bottom: 0px; 
-    margin-top: 0px; 
-    width: 200 px; 
-    height: auto; 
-}
+    #lossesAmount{
+        background-color: #867180;
+        height: 10%; 
+        color: black; 
+        padding-bottom: 10px;
+        font-size: 130%;
+        padding-top: 5px; 
+        margin-bottom: 10px; 
+        width: 20%; 
+
+    }
 
 .random-number {
     background-color: #867180;
