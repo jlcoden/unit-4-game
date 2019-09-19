@@ -14,7 +14,7 @@ html, body {
 /* Styles for right-side of page, column layout */
 /* Holds background image */
 .pagePhoto{
-    background: url(../images/darkCrystal2.jpeg) no-repeat;
+    background: url(../images/darkCrystal.jpeg) no-repeat;
     float: right;  
     background-size:cover;
 
