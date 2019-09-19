@@ -1,15 +1,18 @@
+/* Styles for HTML and Body */
 html, body {
     height: 100%;
     background-color: black;
 }
 
-
+/* Styles for container */
 .container {
     width: auto;
     height: 100%;  
     background-color: black; 
 }
 
+/* Styles for right-side of page, column layout */
+/* Holds background image */
 .pagePhoto{
     background: url(../images/darkCrystal2.jpeg) no-repeat;
     float: right;  
@@ -17,12 +20,14 @@ html, body {
 
  }
 
+ /* Styles for left-side of page, column layout */
  .leftSideColumn{
     border-right: 5px solid #DD3497;
     background-color: black; 
     color: white; 
  }
 
+ /* Styles for buttons, which hold the crystals */
 button {
     padding: 0;
     width: 110px; 
@@ -30,12 +35,14 @@ button {
     background-color: black; 
 }
 
+/*Styles for button btn class */
 button.btn {
     padding: 0px; 
     margin: 0px; 
     border: 2px solid white; 
 }
 
+/* Style for container that holds the score divs */
 #score {
       background-color: #867180;
       color: black; 
@@ -44,29 +51,32 @@ button.btn {
       width: 20%; 
     }
 
-   #winsAmount {
-        background-color: #867180;
-        height: 10%; 
-        color: black; 
-        padding-bottom: 10px;
-        font-size: 1.5em; 
-        padding-top: 5px; 
-        margin-bottom: 10px; 
-        width: 20%; 
-      }
 
-    #lossesAmount{
-        background-color: #867180;
-        height: 10%; 
-        color: black; 
-        padding-bottom: 10px;
-        font-size: 1.5em;
-        padding-top: 5px; 
-        margin-bottom: 10px; 
-        width: 20%; 
-
+/* Style for Div that holds the Wins Amount */
+#winsAmount {
+    background-color: #867180;
+    height: 10%; 
+    color: black; 
+    padding-bottom: 10px;
+    font-size: 1.5em; 
+    padding-top: 5px; 
+    margin-bottom: 10px; 
+    width: 20%; 
     }
 
+    /* Style for Div that holds the number of losses */
+#lossesAmount{
+    background-color: #867180;
+    height: 10%; 
+    color: black; 
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    padding-top: 5px; 
+    margin-bottom: 10px; 
+    width: 20%; 
+}
+
+/* Style for Div that holds the Wins Amount */
 .random-number {
     background-color: #867180;
     width: 100px; 
@@ -79,6 +89,7 @@ button.btn {
     font-size: 1.5em; 
   }
 
+  /* Style for h1 tag, for title of game */
   h1 {
       color: #BC82CF;
       padding: 10px; 
@@ -87,7 +98,8 @@ button.btn {
       font-weight: 400;
       line-height: 2.0; 
   }
-  
+
+/* Style for h2 score title tag */
   h2.scoreTitle {
       color: black; 
       background-color: #867180;
@@ -98,12 +110,11 @@ button.btn {
       line-height: 1.5;
   }
 
+  /* Style for h3 tag that shows the score */
   #scoreDiv{
     color: black; 
       background-color: #867180;
       width: 40%; 
       font-weight: 400;
       font-size: 1.5em;
-
-
   }
