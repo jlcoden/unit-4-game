@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport"
      content="width=device-width, initial-scale=1, user-scalable=yes">
+<!-- Links to boostrap css -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap File -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--custom css file-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -20,12 +20,15 @@
 <body>
 <section>   <!--container for layout-->
             <div class="container">
-                  <!-- placing in card-->
+                  <!-- creating a card layout-->
                   <div class="card">
                   <div class="row" style ="display: flex; flex-wrap: wrap">
+                  <!-- setting layout for left panel of game-->
                   <div class="col-md-6 leftSideColumn">
                         <div class="card-block">
-      <div> <h1>Crystals Collector, Dark Crystal Edition</h1>
+      <!-- Div to contain main paragraph text-->
+      <div class = "mainText"> 
+            <h1>Crystals Collector, Dark Crystal Edition</h1>
            <p> The The Great Conjunction is upon us! To save Thra, you must complete the crystal challenge
             Thra has provided you a random number at the start of the game.  </p>
 
@@ -42,18 +45,21 @@
 
             <p>Good Luck, and remember, what was sundered and undone shall be whole—the two made one!</p>
       </div>
-
+      <!-- div to contain random number output-->
       <div class=  "randomNum">
                   <p class = "random-number">0</p>
       
             </div>
+            <!--Div to contain the Wins Counter and Loses Counter-->
             <div class="stats">
                   <div class = "winLoss">
+                  <!-- P tag to show number of wins-->
                  <p id = "winsAmount">Wins</p> 
+                  <!-- P tag to show number of losses-->
                  <p id = "lossesAmount">Losses</p>
                   </div>
             </div>
-            
+            <!-- Buttons for the four crystals-->
             <button id="btn0" class="btn" >
                         <img src="assets/images/redCrystal2.jpg" width="100%"/> 
                    </button>
@@ -70,14 +76,18 @@
                         <img src="assets/images/greenCrystal1.jpg" width="100%" /> 
                    </button>
 
+                   <!-- Div to contain h2 and h3 tags containing information about players score-->
                    <div class="score">
+                              <!--h2 tag showing 'Your Total Score is -->
                               <h2 class = scoreTitle> Your Total Score is </h2>
+                              <!-- h3 tag to display the total score of the player-->
                               <h3 id = "scoreDiv">0</h3>
               
                    </div>
 
                         </div>
-                              </div>
+                              </div> 
+                                    <!--grid layout for right side of program, displays image from Dark Crystal-->
                                     <div class="col-md-6 pagePhoto">
                               </div>
                   </div>

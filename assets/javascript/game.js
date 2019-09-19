@@ -1,24 +1,30 @@
 //Declare global variables 
+
+//wins counter
 var wins = 0;
+//losses counter
 var losses = 0;
+//randomNumber variable for # player must match
 var randomNumber = 0; 
+//variable for total score
 var totalValue; 
+//variable for crystal value
 var crystalValue;
-//JavaScript function that wraps everything, begins program when document is loaded
 
 
+//JavaScript function begins program when document is loaded
 $(document).ready(function() {
+
+        //start/reset function
        function startReset() {
+            //set total value back to 0
             totalValue =0;
+            //set crystal value back to 0
             crystalValue =0;
 
-            randomNumber = Math.floor(Math.random()* 101 + 19);
-            //declaring minimum and maximum varible for RandomNumber in which the player must match, in order to win
-     //       var min = 19;
-       //     var max = 120;
 
-            //specify that the random number will be between 19 and 120
-      //       randomNumber = Math.floor(Math.random()*(max-min+1)+min);
+            //Random number generater for number player must match 
+            randomNumber = Math.floor(Math.random()* 101 + 19);
 
             //for loop to loop through and create 4 numbers for each crystal
             for(var i = 0; i <4; i++) {
@@ -37,23 +43,22 @@ $(document).ready(function() {
 
    startReset(); 
 
-            //on click button function to 
+            //on click button function
             $(".btn").on('click', function() {
 
-                //declare var for Crystal, which will be given the data-random attribute
+                //placeholder for Crystal, which will be given the data-random attribute
                 crystalValue = ($(this).attr("data-random"));
                 //ParseInt the value so that it is changed to an integer and can be added
                 crystalValue = parseInt(crystalValue);
                 console.log(crystalValue);
-
                 //for each crystalValue add it to the existing totalValue
                  totalValue += crystalValue;
-                 //If totalValue becomes greater then game generated number, alert player that they loss
+                 //call checkIfWon function
                 checkIfWon(); 
 
             }); 
          
-
+        //If totalValue becomes greater then game generated number, alert player that they loss
         function checkIfWon() {
             if(totalValue > randomNumber) {
                 alert("Sorry, you lost!");
@@ -74,6 +79,7 @@ $(document).ready(function() {
                 var showWins= "Wins: " + wins;
                    //show on html page
                 $("#winsAmount").text(showWins);
+                //call start reset function
                 startReset(); 
             }
             $("#scoreDiv").text(totalValue);
